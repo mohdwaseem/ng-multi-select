@@ -133,6 +133,7 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
             bindValue="id"
             groupBy="subprojects"
             [multiple]="true"
+            [selectableGroup]="true"
             [(ngModel)]="selectedProjects">
             <ng-template ng-optgroup-tmp let-item="item">
                 {{item.title}}

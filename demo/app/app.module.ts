@@ -22,7 +22,7 @@ import { LayoutSidenavComponent } from './layout/sidenav-component';
 import { VirtualScrollComponent } from './examples/virtual-scroll.component';
 import { DataService } from './shared/data.service';
 import { AppendToComponent } from './examples/append-to.component';
-import { DataSourceComponent } from './examples/data-source.component';
+
 import { SelectGroupsComponent } from './examples/groups.component';
 import { SelectMultiCheckboxComponent } from './examples/multi-checkbox.component';
 
@@ -32,7 +32,7 @@ export const appRoutes: Routes = [
         redirectTo: '/data-sources',
         pathMatch: 'full'
     },
-    { path: 'data-sources', component: DataSourceComponent, data: { title: 'Data sources', fileName: 'data-source.component.ts' } },
+   
     { path: 'forms', component: ReactiveFormsComponent, data: { title: 'Reactive forms', fileName: 'reactive-forms.component.ts' } },
     { path: 'bindings', component: SelectBindingsComponent, data: { title: 'Data bindings', fileName: 'bindings.component.ts' } },
     { path: 'filter', component: SelectSearchComponent, data: { title: 'Filter and autocomplete', fileName: 'search.component.ts' } },
@@ -87,7 +87,7 @@ export const appRoutes: Routes = [
         DropdownPositionsComponent,
         VirtualScrollComponent,
         AppendToComponent,
-        DataSourceComponent,
+        
         SelectGroupsComponent,
         ConfirmationComponent,
         SelectMultiCheckboxComponent
