@@ -1,11 +1,11 @@
 {
-  "repository": "ng-select/ng-select",
+  "repository": "mohdwaseem/ng-multi-select",
   "engines": {
     "node": ">= 6.9.0",
     "npm": ">= 3.0.0"
   },
   "scripts": {
-    "clean": "rimraf out-tsc dist/* integration/node_modules/@ng-select",
+    "clean": "rimraf out-tsc dist/* integration/node_modules/@ng-multi-select",
     "prebuild": "yarn clean",
     "build": "ng-packagr -p ./src/package.json && yarn build:themes && yarn copy-sass",
     "build:demo": "rimraf dist && webpack --config ./scripts/webpack.dev.js --progress --profile --bail",

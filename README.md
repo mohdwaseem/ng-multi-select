@@ -57,19 +57,19 @@ Table of contents
 Library is under active development and may have API breaking changes for subsequent major versions after 1.0.0.
 
 ## Getting started
-### Step 1: Install `ng-select`:
+### Step 1: Install `ng-multi-select`:
 
 #### NPM
 ```shell
-npm install --save @ng-select/ng-select
+npm install --save @ng-multi-select/ng-multi-select
 ```
 #### YARN
 ```shell
-yarn add @ng-select/ng-select
+yarn add @ng-multi-select/ng-multi-select
 ```
 ### Step 2: Import the NgSelectModule and angular FormsModule module:
 ```js
-import { NgSelectModule } from '@ng-select/ng-select';
+import { NgSelectModule } from '@ng-multi-select/ng-multi-select';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -81,12 +81,12 @@ export class AppModule {}
 ```
 
 ### Step 3: Include a theme: 
-To allow customization and theming, `ng-select` bundle includes only generic styles that are necessary for correct layout and positioning. To get full look of the control, include one of the themes in your application. If you're using the Angular CLI, you can add this to your `styles.scss` or include it in `.angular-cli.json` (Angular v5 and below) or `angular.json` (Angular v6 onwards).
+To allow customization and theming, `ng-multi-select` bundle includes only generic styles that are necessary for correct layout and positioning. To get full look of the control, include one of the themes in your application. If you're using the Angular CLI, you can add this to your `styles.scss` or include it in `.angular-cli.json` (Angular v5 and below) or `angular.json` (Angular v6 onwards).
 
 ```scss
-@import "~@ng-select/ng-select/themes/default.theme.css";
+@import "~@ng-multi-select/ng-multi-select/themes/default.theme.css";
 // ... or 
-@import "~@ng-select/ng-select/themes/material.theme.css";
+@import "~@ng-multi-select/ng-multi-select/themes/material.theme.css";
 
 ```
 
@@ -107,7 +107,7 @@ If you are using SystemJS, you should also adjust your configuration to point to
 In your systemjs config file, `map` needs to tell the System loader where to look for `ng-select`:
 ```js
 map: {
-  '@ng-select/ng-select': 'node_modules/@ng-select/ng-select/bundles/ng-select.umd.js',
+  '@ng-multi-select/ng-multi-select': 'node_modules/@ng-select/ng-select/bundles/ng-select.umd.js',
 }
 ```
 
